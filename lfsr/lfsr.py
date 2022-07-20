@@ -63,9 +63,9 @@ class LFSR():
         self.__round = fround
 
     @property
-    def polynomial_algebric(self):
+    def algebraic(self):
         '''
-        Gives the algebric form of the polynomial
+        Gives the algebraic form of the polynomial
         '''
         poly_math = []
         poly_str = f'{self.poly:0{self.field_order}b}'
