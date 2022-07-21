@@ -1,3 +1,6 @@
+from typing import Tuple
+
+
 class LFSR():
     '''
     Linear Feedback Shift Register Model
@@ -29,6 +32,19 @@ class LFSR():
         self.state = state
         self.__state_init = state
         self.build_poly()
+
+    @classmethod
+    def from_lfsrs(cls, *args):
+        elong_poly = ''
+        elong_state = ''
+        for x in args:
+            x.reset()
+            elong_poly += f'{x.poly:0{x.field_order}b}'
+            elong_state += f'{x.state:0{x.field_order}b}'
+
+        elong_poly = int(elong_poly, 2)
+        elong_state = int(elong_state, 2)
+        return cls(elong_poly, elong_state)
 
     def build_poly(self):
         '''
@@ -157,11 +173,24 @@ class Galois_LFSR():
 
     '''
 
-    def __init__(self, poly: dict, state: int):
+    def __init__(self, poly: int, state: int):
         self.poly = poly
         self.state = state
         self.__state_init = state
         self.build_poly()
+
+    @classmethod
+    def from_lfsrs(cls, *args):
+        elong_poly = ''
+        elong_state = ''
+        for x in args:
+            x.reset()
+            elong_poly += f'{x.poly:0{x.field_order}b}'
+            elong_state += f'{x.state:0{x.field_order}b}'
+
+        elong_poly = int(elong_poly, 2)
+        elong_state = int(elong_state, 2)
+        return cls(elong_poly, elong_state)
 
     def build_poly(self):
         '''
