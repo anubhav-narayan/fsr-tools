@@ -1,19 +1,34 @@
 [tool.poetry]
-name = "lfsr"
-version = "0.0.1"
-description = "Linear Feedback Shift Registers"
+name = "lfsr-tools"
+version = "1.0.0"
+description = "Linear Feedback Shift Registers in pure Python3"
 authors = ["Anubhav Mattoo <anubhavmattoo@outlook.com>"]
 license = "MIT"
 readme = "README.md"
 homepage = "https://github.com/anubhav-narayan/lfsr"
 repository = "https://github.com/anubhav-narayan/lfsr"
+classifiers=[
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Topic :: Communications',
+        'Topic :: Internet',
+        'Topic :: Security :: Cryptography',
+        'Development Status :: 5 - Production/Stable'
+]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.8"
 
 [tool.poetry.dev-dependencies]
-pytest = "^3.6"
+pytest = "^8.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/anubhav-narayan/lfsr/issues"
