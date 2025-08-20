@@ -31,4 +31,5 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.urls]
-"Bug Tracker" = "https://github.com/anubhav-narayan/lfsr/issues"
+"Homepage" = "https://github.com/anubhav-narayan/fsr-tools"
+"Bug Tracker" = "https://github.com/anubhav-narayan/fsr-tools/issues"
