@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "lfsr-tools"
+name = "fsr-tools"
 version = "1.0.0"
 description = "Linear Feedback Shift Registers in pure Python3"
 authors = ["Anubhav Mattoo <anubhavmattoo@outlook.com>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/anubhav-narayan/lfsr"
-repository = "https://github.com/anubhav-narayan/lfsr"
+homepage = "https://github.com/anubhav-narayan/fsr-tools"
+repository = "https://github.com/anubhav-narayan/fsr-tools"
 classifiers=[
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',

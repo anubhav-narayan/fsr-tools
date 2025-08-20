@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class LFSR(ABC):
+class FSR(ABC):
     """
     Abstract base class for Linear Feedback/Feedforward Shift Registers.
 
